@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom|center_horizontal|top"
+    android:orientation="vertical"
+    tools:context="edu.berkeley.cs160.brittanycheng.storytime.RecordActivity" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+	    <TextView
+	        android:id="@+id/recordStoryPrompt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="Record your story. Use arrows to switch between photos."
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="603dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" >
+
+            <ImageButton
+                android:id="@+id/leftArrow"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:onClick="prevPhoto"
+                android:background="@android:color/transparent"
+                />
+ <LinearLayout 
+     			android:layout_height = "match_parent"
+                android:layout_width = "30dp"
+                android:layout_weight="1"
+                ></LinearLayout>
+            
+            <ImageView
+                android:id="@+id/currentImageRecording"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_weight="0.44"
+                android:src="@drawable/berkeley" />
+
+            <LinearLayout 
+                android:layout_height = "match_parent"
+                android:layout_width = "30dp"
+                android:layout_weight="1"
+                ></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/rightArrow"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:onClick="nextPhoto"
+                android:scaleType="matrix"
+                android:background="@android:color/transparent"
+                android:src="@drawable/tea" />
+
+        </LinearLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_margin="0dp" 
+            >
+
+        <ImageButton
+            android:id="@+id/recordButton"
+            
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="record"
+            android:background="@drawable/round_button_red"
+            android:onClick="toggleRecord"
+            android:scaleType="fitXY"
+            android:src="@drawable/mic" />
+        
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/recordButton"
+            android:layout_marginLeft = "50dp"
+            android:layout_marginTop = "80dp"
+            android:textSize = "25dp"
+            android:layout_marginBottom="18dp"
+            android:text="0.0" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timer"
+            android:layout_alignBottom="@+id/timer"
+            android:layout_toRightOf="@+id/timer"
+            android:text="s"
+            android:textSize="25dp" />
+        
+        </RelativeLayout>
+
+
+		
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="0dp"
+	    android:paddingTop="29dp" >
+
+	    <Button
+	        android:id="@+id/startOver"
+	        android:layout_width="266dp"
+	        android:layout_height="73dp"
+	        android:layout_weight="1"
+	        android:textSize="27dp"
+	        android:text="Start Over"
+	        android:visibility="invisible" />
+
+	    <Button
+	        android:id="@+id/doneRecording"
+	        style="@style/nextdone"
+	        	        android:layout_weight="1"
+	                android:background="#FFB3D233"
+	        
+	        android:layout_width="266dp"
+	        android:layout_height="62dp"
+	        android:text="Done" />
+
+	</LinearLayout>
+
+</LinearLayout>

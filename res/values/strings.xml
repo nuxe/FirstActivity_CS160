@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StoryTime</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_first">FirstActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title">Title</string>
+    <string name="btn_ok">Done Selecting</string>
+
+    <string-array name="family_members">
+        <item>Mom</item>
+        <item>Dad</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Grand-father</item>
+        <item>Grand-mother</item>
+        <item>Cousin</item>
+        <item>Aunt</item>
+    </string-array>
+
+    <string name="title_activity_request_story">MainActivity</string>
+
+</resources>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".FirstActivity" >
+
+    <Button
+        android:id="@+id/createStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFB3D233"
+        android:layout_marginBottom="52dp"
+        style="@style/nextdone"
+        android:text="Create Story" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/storytime_logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:padding="25dp"
+        android:text="Welcome to StoryTime, your family&apos;s place for creating and sharing stories."
+        android:textSize="30sp" />
+
+</RelativeLayout>
